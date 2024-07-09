@@ -1,8 +1,11 @@
 import type { MetaFunction } from "@remix-run/node";
 
+import ToDoLists from "./toDoList";
+
+import MyContact from "./myContact";
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "BUSIT ACADEMY" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
@@ -10,7 +13,9 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="font-sans p-4">
-      <h1 className="text-3xl">Welcome to Remix</h1>
+      <MyContact />
+      <ToDoLists />
+      {/* <h1 className="text-3xl">Welcome to Remix</h1>
       <ul className="list-disc mt-4 pl-6 space-y-2">
         <li>
           <a
@@ -48,7 +53,7 @@ export default function Index() {
         <li>ananpoolsombat</li>
         <li>dbi</li>
         <li>ananpoolsombat@gmail.com</li>
-        </ul>
+        </ul> */}
     </div>
   );
 }
