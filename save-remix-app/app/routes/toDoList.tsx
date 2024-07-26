@@ -13,6 +13,11 @@ const ToDos = [
         id : 300 ,
         title : "ROV BUSIT CHAMPIONSHIP" ,
         status : false
+    } ,
+    {
+        id : 400 ,
+        title : "โครงการอบรมนักศึกษา" ,
+        status : true
     } 
 ] ;
 
@@ -26,7 +31,7 @@ function ToDoitem ( {id , title , status }  :  { id : number , title : string , 
 
 export default function ToDoLists () {
     const item = ToDos.map(item => 
-        <ToDoitem id = {item . id} title={item.title} status = {item.status} />
+        <ToDoitem  key={item.id} id ={item.id} title={item.title} status ={item.status} />
     ) ;
 
     return (
