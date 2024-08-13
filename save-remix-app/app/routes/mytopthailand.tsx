@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { mydata } from "./wherehousedata";
+import MYMENU from "./template/menu";
 
 export default function Topthai () {
     const [status, setstatus]= useState(true)
@@ -28,6 +29,7 @@ export default function Topthai () {
 return (
 <>
     <h1 className="text-3xl text-teal-500 bg-slate-800">รายชื่อสมาชิก</h1>
+    <MYMENU />
     <hr/>
     {item}
     <hr/>
